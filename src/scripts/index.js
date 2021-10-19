@@ -115,6 +115,9 @@ const renderPictures = function (list) {
  * Функция копирует шаблон для картинки в попапе,
  * заполняет его и встраивает в попап
  * @param {object} picture
+ * @param {string} picture.download_url
+ * @param {string} picture.author
+ * @param {number} picture.width
  */
 const renderPopupPicture = function (picture) {
     const clone = templateImagePopup.content.cloneNode(true);
